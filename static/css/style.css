@@ -1,0 +1,1025 @@
+/* fonte massa - just */
+@media (min-width: 991px)
+{
+  
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+*{
+    margin:0px;
+    padding: 0px;
+  }
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+  
+header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    height:21vh;
+    position: fixed;
+    background-color: lightgreen;
+    z-index: 2;
+    border-bottom: 2px solid black;
+}
+  
+  .title{
+    display: flex;
+    flex-grow: 2;
+    justify-content: center;
+    align-items: center;
+    height: 14vh;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  nav {
+    display: flex;
+    flex-grow: 1;
+    height: 7vh;
+    align-items: center;
+  }
+  
+  nav ul{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    height: 100%
+  }
+  
+  nav ul li{
+    list-style:none;
+    display:flex;
+    flex-grow: 1;
+    width:100%;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    height: 7vh; 
+    background-color: lightgreen;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  nav ul li a{
+    text-decoration: none;
+    color: black;
+  }
+  
+  
+  nav ul li::after {
+      content: "";
+      display: block;
+      justify-content: end;
+      margin-top: 10px;
+      width: 10px;
+      height: 2px;
+      background-color: transparent;
+      transition: 1s 0s;
+     
+  }
+  
+  nav ul li:hover::after {
+      content: "";
+      display: block;
+      width: 80%;
+      height: 2px;
+      background-color: brown;
+  }
+  
+main {
+    width: 100%;
+    padding-top: 22vh;
+    padding-bottom: 5vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly
+    
+}
+
+
+
+
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgreen;
+  height: 20vh;
+}
+
+footer p{
+  font-weight:bold;
+  text-shadow: 5px 5px 0.5px lightgray;
+  color: black;
+  font-size: 20px;
+  font-family: 'Changa One';
+}
+
+
+/*   ESTILO DA HOME    */
+
+
+.start-main{
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80vh;
+  width: 100%;
+  max-width: 60%; 
+  vertical-align: middle;
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+.start-main h1{
+  border-bottom: 3px solid darkgreen;
+
+  font-size: 40px;
+  
+}
+
+.start-main p{
+  padding-top: 20px;
+  width: 500px;
+  text-align: justify;
+  font-size: 1.5rem;
+}
+
+
+
+.img-main{
+  width: auto;
+  height: auto; 
+  max-width: 400px;
+  max-height: 300px;
+}
+
+
+
+.sec-objective{
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  height: 50vh;
+  justify-content: center;
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+}
+
+.secobj-div{
+  height: auto;
+  width: 100%;
+  max-width: 60%;
+  display: flex;
+  justify-content: space-between;
+  max-width: 80%;
+  
+}
+
+.sec-objective h1{
+  
+  font-size: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.sec-info{
+  padding: 100px 0px;
+  /* background-color: gainsboro; */
+}
+
+.sec-info h1{
+  font-size: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.secinfo-div{
+  display: flex;
+  justify-content: space-around;
+}
+
+.text-along{
+  font-size: 1.5rem;
+  padding: 0px 40px;
+  display:inline-block;
+  width: 500px;
+  justify-content: space-evenly;
+  text-align: justify;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.button-div{
+  margin-top: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.button-class{
+  width: 400px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: bold;
+  color: black;
+  margin: 0 30px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 50px;  
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+}
+
+.button-class:hover{
+  color: white;
+  transition: .7s;
+  
+}
+
+.button-class::before{
+  display: block;
+  content: "";
+  left: 0;
+  top: 0;
+  position: absolute; 
+  width: 100%;
+  height: 100%;
+  background-color: #2196f3;
+  opacity: 0.9;
+  z-index: -1;
+  transition: width .4s;
+}
+
+.item1::before{
+  content: "";  
+  width: 0;
+  height: 100%;
+}
+
+
+.item1:hover::before{
+  width: 100%;   
+}
+
+.sec-register{
+  padding: 100px 0px;
+  margin-bottom: 50px;
+}
+
+.secreg-div{
+   padding: 0;
+   height: 100%;
+   width: 100%;
+   display: inline-block;
+}
+
+.register-text{
+  text-align: center;
+  font-size: 25px;
+  padding: 30px 40px;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.register-text h1{
+  padding-bottom: 40px;
+  text-align: center;
+  justify-content: center;
+}
+
+}
+
+/* Estilo do titulo das paginas de games*/
+
+.title-page{
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 14%;
+  color: black;
+}
+.title-page h1{
+  margin-left: 100px;
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+  border-bottom: 3px solid forestgreen;
+}
+
+.title-text{
+  align-items: center;
+  margin: 0;
+  display: grid;
+  justify-self: center;
+  grid-template-columns: 1fr 1fr;
+  
+}
+
+.title-text p{
+  text-align: justify;
+  margin: 0;
+  max-width: 500px;
+  text-indent: 4rem;
+  padding: 0px 100px;
+  padding-top: 30px;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/*
+                      TABLET
+*/
+
+@media ((min-width:576px) and (max-width: 990px))
+{
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+*{
+    margin:0px;
+    padding: 0px;
+  }
+  
+header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    height:21vh;
+    position: fixed;
+    background-color: lightgreen;
+    z-index: 2;
+}
+  
+  .title{
+    display: flex;
+    flex-grow: 2;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    height: 14vh;
+   
+    font-size: 20px;
+  }
+  
+  
+  nav {
+    display: flex;
+    position: relative;
+    flex-grow: 1;
+    height: 7vh;         /*height fixo*/
+    align-items: center;
+
+    
+  }
+  
+  nav ul{
+    display: none;
+    position: absolute;
+    flex-direction: column;
+
+    left: 0px;
+    top: 0px;
+    width: 250px;
+    text-align: center;
+    height: 300px;
+
+    font-size:40px
+  }
+  
+  nav ul li{
+    list-style:none;
+    display:flex;
+    flex-grow: 1;
+    width:100%;
+    height: 7vh;        /*height fixo*/
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    background-color: lightgreen;   /* cor na li*/
+  }
+
+
+  nav ul li::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 2px;
+    background-color: transparent;
+    transition: 1s 0s;
+}
+
+nav ul li:hover::after {
+    content: "";
+    display: block;
+    width: 60%;
+    height: 2px;
+    background-color: brown;
+}
+
+  
+main {
+    width: 100%;
+    padding-top: 22vh;
+    padding-bottom: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgreen;
+  height: 20vh;
+}
+
+footer p{
+  font-weight:bold;
+  text-shadow: 5px 5px 0.5px lightgray;
+  color: black;
+  font-size: 20px;
+  font-family: 'Changa One';
+}
+
+/* estilo tablet home  */
+
+
+
+.start-main{
+  padding-top: 50px;
+  display: inline;
+  text-align: justify;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  padding-bottom: 80px;
+}
+
+.start-main h1{
+  padding: 0px 10px;
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+.start-main p{
+  padding: 10px 100px;
+  text-align: justify;
+  font-size: 20px;
+}
+
+.img-main{
+  max-height: 300px;
+  max-width: 400px;
+  width: auto;
+  height: auto;
+}
+
+.img-div{
+  text-align: center;
+  
+}
+
+.sec-objective{
+  text-align: center;
+  background-color: lightgray;
+}
+
+.secobj-div{
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+}
+
+.sec-objective h1{
+  font-size: 30px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.sec-info{
+  padding: 50px 0px;
+  /* background-color: gainsboro; */
+}
+
+.sec-info h1{
+  font-size: 30px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+
+.secinfo-div{
+  display: inline;
+  justify-content: space-around;
+}
+
+.text-along{
+  font-size: 20px;
+  padding: 30px 100px;
+  display:inline-block;
+  justify-content: space-evenly;
+  text-align: justify;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.button-div{
+  margin-top: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 0px 70px;
+  
+}
+
+.button-class{
+  width: 400px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: bold;
+  color: black;
+  margin: 0 30px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 50px;  
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+}
+
+.button-class:hover{
+  color: white;
+  transition: .7s;
+  
+}
+
+.button-class::before{
+  display: block;
+  content: "";
+  left: 0;
+  top: 0;
+  position: absolute; 
+  width: 100%;
+  height: 100%;
+  background-color: #2196f3;
+  opacity: 0.9;
+  z-index: -1;
+  transition: width .4s;
+}
+
+.item1::before{
+  content: "";  
+  width: 0;
+  height: 100%;
+}
+
+
+.item1:hover::before{
+  width: 100%;   
+}
+
+.sec-register{
+  padding: 50px 0px;
+  margin-bottom: 50px;
+}
+
+.secreg-div{
+   padding: 0;
+   height: 100%;
+   width: 100%;
+   display: inline-block;
+}
+
+.register-text{
+  text-align: center;
+  font-size: 20px;
+  padding: 30px 100px;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.register-text p{
+  text-align: justify;
+  font-size: 20px;
+}
+
+.register-text h1{
+  font-size: 30px;
+}
+
+.register-text h1{
+  padding-bottom: 40px;
+  text-align: center;
+  justify-content: center;
+}
+
+/* Estilo do titulo das paginas de games*/
+
+.title-page{
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 27%;
+  color: black;
+}
+.title-page h1{
+  margin-left: 100px;
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+  border-bottom: 3px solid forestgreen;
+}
+
+.title-text{
+  align-items: center;
+  margin: 0;
+  display: inline;
+  justify-self: center;
+  
+}
+
+.title-text p{
+  text-align: justify;
+  margin: 0;
+  max-width: 500px;
+  text-indent: 4rem;
+  padding: 0px 100px;
+  padding-top: 30px;
+  padding-bottom: 80px;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+}
+
+
+/*celular*/
+
+
+@media (max-width:575px)
+{
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+*{
+    margin:0px;
+    padding: 0px;
+  }
+  
+main {
+  width: 100%;
+  height: 100%;
+  padding-top: 30vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    height:21vh;        /* height fixo*/
+    position: fixed;
+    z-index: 2;
+}
+  
+.title{
+    display: flex;
+    flex-grow: 2;
+    height: 14vh; /*height fixo*/
+    justify-content: center;
+    align-items: center;
+    background-color: lightgreen;
+    font-family: 'Roboto', sans-serif;
+
+    font-size: 15px;
+}
+
+
+  
+nav {
+    display: flex;
+    position: relative;
+    flex-grow: 1;
+    height: 7vh;         /*height fixo*/
+    align-items: center;
+    background-color: lightgreen;
+  }
+  
+  nav ul{
+    display: none;
+    position: absolute;
+    flex-direction: column;
+
+    left: 0px;
+    top: 0px;
+    width: 70%;
+    text-align: center;
+    height: 300px;
+
+    font-size: 25px;
+  }
+  
+  nav ul li{
+    list-style:none;
+    display:flex;
+    flex-grow: 1;
+    width:100%;
+    height: 7vh;        /*height fixo*/
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    background-color: lightgreen;   /* cor na li*/
+    
+  }
+
+
+  nav ul li::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 2px;
+    background-color: transparent;
+    transition: 1s 0s;
+}
+
+nav ul li:hover::after {
+    content: "";
+    display: block;
+    width: 60%;
+    height: 2px;
+    background-color: brown;
+}
+
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgreen;
+  height: 15vh;
+}
+
+footer p{
+  font-weight:bold;
+  text-shadow: 5px 5px 0.5px lightgray;
+  color: black;
+  font-size: 15px;
+  font-family: 'Changa One';
+}
+
+/* estilo mobile home  */
+
+
+
+.start-main{
+ 
+  display: inline;
+  text-align: justify;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  padding-bottom: 80px;
+}
+
+.start-main h1{
+  padding: 0px 10px;
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+.start-main p{
+  padding: 10px 30px;
+  text-align: justify;
+  font-size: 20px;
+}
+
+
+
+.img-main{
+  max-height: 200px;
+  max-width: 290px;
+  width: auto;
+  height: auto;
+}
+
+.img-div{
+  text-align: center;
+  
+}
+
+.sec-objective{
+ 
+  text-align: center;
+  background-color: lightgray;
+  
+}
+
+.secobj-div{
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+}
+
+.sec-objective h1{
+  font-size: 30px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.sec-info{
+  padding: 50px 0px;
+  /* background-color: gainsboro; */
+}
+
+.sec-info h1{
+  font-size: 30px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+
+
+.secinfo-div{
+  display: inline;
+  justify-content: space-around;
+}
+
+.text-along{
+  font-size: 20px;
+  padding: 30px 40px;
+  display:inline-block;
+  justify-content: space-evenly;
+  text-align: justify;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.button-div{
+  padding: 0px 100px;
+  margin-top: 10px;
+  
+  display: inline;
+  justify-content: center;
+  
+}
+
+.button-class{
+  width: auto;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: bold;
+  color: black;
+  margin: 0 30px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 50px;  
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 20px;
+}
+
+.button-class:hover{
+  color: white;
+  transition: .7s;
+  
+}
+
+.button-class::before{
+  display: block;
+  content: "";
+  left: 0;
+  top: 0;
+  position: absolute; 
+  width: 100%;
+  height: 100%;
+  background-color: #2196f3;
+  opacity: 0.9;
+  z-index: -1;
+  transition: width .4s;
+}
+
+.item1::before{
+  content: "";  
+  width: 0;
+  height: 100%;
+}
+
+
+.item1:hover::before{
+  width: 100%;   
+}
+
+.sec-register{
+  padding: 50px 0px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.secreg-div{
+   padding: 0;
+   height: 100%;
+   width: 100%;
+   display: inline-block;
+}
+
+.register-text{
+  text-align: center;
+  font-size: 20px;
+  padding: 30px 40px;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.register-text p{
+  text-align: justify;
+  font-size: 20px;
+}
+
+.register-text h1{
+  font-size: 30px;
+}
+
+.register-text h1{
+  padding-bottom: 40px;
+  text-align: center;
+  justify-content: center;
+}
+
+/* Estilo do titulo das paginas de games*/
+
+.title-page{
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 30vh;
+  color: black;
+}
+.title-page h1{
+  margin-left: 10vw;
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+  border-bottom: 3px solid forestgreen;
+}
+
+.title-text{
+  align-items: center;
+  margin: 0;
+  display: inline;
+  justify-self: center;
+  
+}
+
+.title-text p{
+  text-align: justify;
+  margin: 0;
+  max-width: 500px;
+  text-indent: 3rem;
+  padding: 0px 30px;
+  padding-top: 30px;
+  padding-bottom: 80px;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+}

@@ -1,0 +1,45 @@
+/*nivel 1*/
+
+
+.caixa-horizontal {
+    display: flex;
+    flex-direction: column;
+    background-color: lightblue;
+}
+/**/
+
+
+
+/*nivel 2*/
+.caixas {
+    flex-grow: 3;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: gray;
+}
+
+.leftright {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/**/
+
+
+
+/*nivel 3*/
+
+.caixa{
+    background-color: lightblue;
+    display: block;
+    width: 30%;
+    min-height: 300px;
+    margin: 10px 0px;
+}
+
+.caixa-oculta {
+    display: none;
+}
