@@ -1,0 +1,26 @@
+.box-explorar {
+    display: flex;
+    width: 100%;
+    padding: 10px 0px;
+    flex-wrap: wrap;
+    background-color: lightcyan;
+    justify-content: space-evenly;
+}
+
+.box-explorar-sub {
+    width: 350px;
+    height: auto;
+    margin-bottom: 35px;
+    
+}
+@media ((min-width: 576px) and (max-width:990px)) {
+    .box-explorar-sub {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 575px) {
+    .box-explorar-sub {
+        margin-bottom: 10px;
+    }
+}

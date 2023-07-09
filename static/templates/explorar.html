@@ -7,25 +7,83 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <link rel="stylesheet" href="../css/caixa_horizontal.css">
+    <link rel="stylesheet" href="../css/layout_explorar.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/config.css">
 
 </head>
 <body>
+    <header>
+
+        <div class="title">
+          <h1>TecGames</h1>
+        </div>
+    
+        <nav>
+          <i class="hamburger bi bi-list"></i>
+          <ul>
+    
+            <li><a href="../../index.html">Inicio</a> </li>
+            <li><a href="#">Jogos PC</a></li>
+            <li><a href="./jogos_mobile.html">Jogos Mobile</a></li>
+            <li><a href="./jogos_console.html">Jogos Console</a></li>
+            <li><a href="./explorar.html">Explorar</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li class="config">
+              <div class="box-config-main">
+                <p class="config-p">Configurações</p>
+              </div>
+    
+              <div class="box-content">
+                <p><i class="son bi bi-volume-down-fill">Son</i></p>
+                <p>Light</p>
+                <p>20/04 - 17:00</p>
+                <p>Perfil</p>
+                <p>Sair(logout)</p>
+              </div>
+            </li>
+    
+          </ul>
+        </nav>
+      </header>
+
+
+
+
+
+
     <div>
         <h1>topicos</h1>
-        <a href="#">Videos</a> <br>
-        <a href="#">Videos ao vivo</a> <br>
-        <a href="#">Fotos do dia</a> <br>
+        <a href="#videos">Videos</a> <br>
+        <a href="#videos-ao-vivo">Videos ao vivo</a> <br>
+        <a href="#fotos-do-dia">Fotos do dia</a> <br>
         <a href="#noticias">notícias</a>
     </div>
 
     <div id="videos">
         <h1>videos</h1>
-        <p>conteudo...</p>
+        <section class="box-explorar">
+            <img class="box-explorar-sub" src="../midias/fotos/PES.webp" alt="">
+            <img class="box-explorar-sub" src="../midias/fotos/PES.webp" alt="">
+            <img class="box-explorar-sub" src="../midias/fotos/PES.webp" alt="">
+
+            <img class="box-explorar-sub" src="../midias/fotos/PES.webp" alt="">
+            <img class="box-explorar-sub" src="../midias/fotos/PES.webp" alt="">
+            <img class="box-explorar-sub" src="../midias/fotos/PES.webp" alt="">
+        </section>
     </div>
 
     <div id="videos-ao-vivo">
         <h1>videos ao vivo</h1>
-        <p>conteudo...</p>
+        <section class="box-explorar">
+            <img class="box-explorar-sub" src="../midias/fotos/PES.webp" alt="">
+            <img class="box-explorar-sub" src="../midias/fotos/PES.webp" alt="">
+            <img class="box-explorar-sub" src="../midias/fotos/PES.webp" alt="">
+
+            <img class="box-explorar-sub" src="../midias/fotos/PES.webp" alt="">
+            <img class="box-explorar-sub" src="../midias/fotos/PES.webp" alt="">
+            <img class="box-explorar-sub" src="../midias/fotos/PES.webp" alt="">
+        </section>
     </div>
 
     <div id="noticias">
@@ -92,8 +150,25 @@
             </div>
         </div>
     </div>
+
+    <div id="fotos-do-dia">
+        <h1>Fotos do dia</h1>
+        <section class="box-explorar">
+            <img class="box-explorar-sub" src="../midias/fotos/PES.webp" alt="">
+            <img class="box-explorar-sub" src="../midias/fotos/PES.webp" alt="">
+            <img class="box-explorar-sub" src="../midias/fotos/PES.webp" alt="">
+
+            <img class="box-explorar-sub" src="../midias/fotos/PES.webp" alt="">
+            <img class="box-explorar-sub" src="../midias/fotos/PES.webp" alt="">
+            <img class="box-explorar-sub" src="../midias/fotos/PES.webp" alt="">
+        </section>
+    </div>
     
 
     <script src="../js/caixa_horizontal.js"></script>
+    <audio src="../midias/clickgotaagua.mp3"></audio>
+    <script src="../js/son.js"></script>
+    <script src="../js/config.js"></script>
+    <script src="../js/mobile.js"></script>
 </body>
 </html>
