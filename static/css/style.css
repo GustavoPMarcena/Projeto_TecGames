@@ -212,7 +212,7 @@ footer p{
   display:inline-block;
   width: 500px;
   justify-content: space-evenly;
-  text-align: justify;
+  text-align: left;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -331,7 +331,7 @@ footer p{
 }
 
 .title-text p{
-  text-align: justify;
+  text-align: left;
   margin: 0;
   max-width: 500px;
   text-indent: 4rem;
@@ -354,6 +354,10 @@ footer p{
 *{
     margin:0px;
     padding: 0px;
+  }
+
+  body{
+    font-family: 'Roboto', sans-serif;
   }
   
 header {
@@ -431,6 +435,11 @@ nav ul li:hover::after {
     width: 60%;
     height: 2px;
     background-color: brown;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: black;
 }
 
   
@@ -542,7 +551,7 @@ footer p{
   padding: 30px 100px;
   display:inline-block;
   justify-content: space-evenly;
-  text-align: justify;
+  text-align: left;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -668,7 +677,7 @@ footer p{
 }
 
 .title-text p{
-  text-align: justify;
+  text-align: left;
   margin: 0;
   max-width: 500px;
   text-indent: 4rem;
@@ -695,6 +704,10 @@ footer p{
 *{
     margin:0px;
     padding: 0px;
+  }
+
+  body{
+    font-family: 'Roboto', sans-serif;
   }
   
 main {
@@ -749,11 +762,12 @@ nav {
     width: 70%;
     text-align: center;
     height: 300px;
-
+    text-decoration: none;
     font-size: 25px;
   }
   
   nav ul li{
+    text-decoration: none;
     list-style:none;
     display:flex;
     flex-grow: 1;
@@ -782,6 +796,11 @@ nav ul li:hover::after {
     width: 60%;
     height: 2px;
     background-color: brown;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: black;
 }
 
 
@@ -883,7 +902,7 @@ footer p{
   padding: 30px 40px;
   display:inline-block;
   justify-content: space-evenly;
-  text-align: justify;
+  text-align: left;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -1011,7 +1030,7 @@ footer p{
 }
 
 .title-text p{
-  text-align: justify;
+  text-align: left;
   margin: 0;
   max-width: 500px;
   text-indent: 3rem;

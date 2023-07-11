@@ -113,4 +113,38 @@ html{
     display: flex;
     flex-direction: column;
 }
+@media ((min-width:576px) and (max-width: 990px))
+{
+    .box{
+        width: 50%;
+        display: flex;
+        padding: 70px;
+        flex-direction: column;
+        justify-content: center;
+        border: 2px solid black;
+        border-radius: 5px;
+        background-color: white;
+        font-family: 'Roboto', sans-serif;
+        
+    }
 
+
+}
+
+
+
+@media (max-width:575px)
+{
+    .box{
+    width: 80vw;
+    display: flex;
+    padding: 70px;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    
+}
+}

@@ -38,6 +38,7 @@
 .caixa{
     font-size: 1em;
 
+   text-decoration: none;
     background-color: darkgray;
     display: flex;
     justify-content: space-evenly;
@@ -121,6 +122,7 @@
 
 @media (max-width: 575px) {
     .caixa {
+        
         font-size: 1.15em;
         min-height: 350px;
     }
