@@ -62,6 +62,7 @@
         display: flex;
         font-size: 30px;
         color: black;
+
     }
 
     .hamburger:hover {
@@ -77,7 +78,7 @@
     transition: 0.5s 0s;
     }
     .config-ativado {
-    height: 21vh;
+    height: 35vh;
     }
 
 
