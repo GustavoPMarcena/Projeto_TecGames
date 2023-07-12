@@ -11,6 +11,7 @@
 
 body{
   font-family: 'Roboto', sans-serif;
+  background-color: lightgray;
 }
   
 header {
@@ -20,7 +21,7 @@ header {
     width:100%;
     height:21vh;
     position: fixed;
-    background-color: lightgreen;
+    background-color: #100f15;
     z-index: 2;
     border-bottom: 2px solid black;
 }
@@ -32,6 +33,7 @@ header {
     align-items: center;
     height: 14vh;
     font-family: 'Roboto', sans-serif;
+    color: #d7d7d7;
   }
   
   nav {
@@ -57,13 +59,14 @@ header {
     justify-content: center; 
     align-items: center;
     height: 7vh; 
-    background-color: lightgreen;
+    background-color: #100f15;
     font-family: 'Roboto', sans-serif;
   }
 
   nav ul li a{
+    color: #d7d7d7;
     text-decoration: none;
-    color: black;
+    
   }
   
   
@@ -84,10 +87,16 @@ header {
       display: block;
       width: 80%;
       height: 2px;
-      background-color: brown;
+      background-color: #3b57de;
+  }
+  nav ul li a:hover{
+    color:white;
   }
   
 main {
+    /* background-color: #100f15; */
+    background-color: lightgray;
+    color: black;
     width: 100%;
     padding-top: 22vh;
     padding-bottom: 5vh;
@@ -107,16 +116,15 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: lightgreen;
+  background-color: #100f15;
   height: 20vh;
 }
 
 footer p{
-  font-weight:bold;
-  text-shadow: 5px 5px 0.5px lightgray;
-  color: black;
+  font-family: 'Roboto', sans-serif;
+  color: #d7d7d7;
   font-size: 20px;
-  font-family: 'Changa One';
+
 }
 
 
@@ -137,8 +145,8 @@ footer p{
 }
 
 .start-main h1{
-  border-bottom: 3px solid darkgreen;
-
+  border-bottom: 3px solid darkblue;
+ 
   font-size: 40px;
   
 }
@@ -192,7 +200,7 @@ footer p{
 
 .sec-info{
   padding: 100px 0px;
-  /* background-color: gainsboro; */
+  background-color: lightgray;
 }
 
 .sec-info h1{
@@ -260,7 +268,7 @@ footer p{
   position: absolute; 
   width: 100%;
   height: 100%;
-  background-color: #2196f3;
+  background-color: #3b57de;
   opacity: 0.9;
   z-index: -1;
   transition: width .4s;
@@ -278,6 +286,7 @@ footer p{
 }
 
 .sec-register{
+  background-color: lightgray;
   padding: 100px 0px;
   margin-bottom: 50px;
 }
@@ -303,45 +312,46 @@ footer p{
   justify-content: center;
 }
 
-}
+
 
 /* Estilo do titulo das paginas de games*/
 
-.title-page{
+.section-type-games{
+  padding-top: 30vh;
+  width: 100%;
   display: flex;
-  justify-content: flex-start;
-  padding-top: 14%;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: lightgrey;
   color: black;
 }
-.title-page h1{
-  margin-left: 100px;
-  text-align: center;
-  font-size: 25px;
-  font-family: 'Roboto', sans-serif;
-  border-bottom: 3px solid forestgreen;
-}
 
-.title-text{
-  align-items: center;
-  margin: 0;
-  display: grid;
-  justify-self: center;
-  grid-template-columns: 1fr 1fr;
+.title-page h1{
+  border-bottom: 3px solid darkblue;
+  font-size: 40px;
   
 }
 
-.title-text p{
+.title-page p{
+  padding-top: 20px;
+  width: 600px;
   text-align: left;
-  margin: 0;
-  max-width: 500px;
-  text-indent: 4rem;
-  padding: 0px 100px;
-  padding-top: 30px;
-  font-size: 20px;
-  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
 }
 
+.img-type-div{
+  text-align: center;
+}
+.img-type{
+  width: auto;
+  height: auto; 
+  max-width: 400px;
+  max-height: 300px;
+}
 
+}
 /*
                       TABLET
 */
@@ -358,6 +368,7 @@ footer p{
 
   body{
     font-family: 'Roboto', sans-serif;
+    background-color: lightgrey;
   }
   
 header {
@@ -367,7 +378,7 @@ header {
     width:100%;
     height:21vh;
     position: fixed;
-    background-color: lightgreen;
+    background-color: #100f15;
     z-index: 2;
 }
   
@@ -378,7 +389,7 @@ header {
     align-items: center;
     font-family: 'Roboto', sans-serif;
     height: 14vh;
-   
+    color: #d7d7d7;
     font-size: 20px;
   }
   
@@ -416,7 +427,7 @@ header {
     flex-direction: column;
     justify-content: center; 
     align-items: center;
-    background-color: lightgreen;   /* cor na li*/
+    background-color: #100f15;   /* cor na li*/
   }
 
 
@@ -439,7 +450,7 @@ nav ul li:hover::after {
 
 nav ul li a{
   text-decoration: none;
-  color: black;
+  color: #d7d7d7;
 }
 
   
@@ -451,6 +462,7 @@ main {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    background-color: lightgrey;
 }
 
 
@@ -462,16 +474,14 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: lightgreen;
+  background-color: #100f15;
   height: 20vh;
 }
 
 footer p{
-  font-weight:bold;
-  text-shadow: 5px 5px 0.5px lightgray;
-  color: black;
+  font-family: 'Roboto', sans-serif;
+  color: #d7d7d7;
   font-size: 20px;
-  font-family: 'Changa One';
 }
 
 /* estilo tablet home  */
@@ -654,38 +664,39 @@ footer p{
 
 /* Estilo do titulo das paginas de games*/
 
-.title-page{
-  display: flex;
-  justify-content: flex-start;
-  padding-top: 27%;
-  color: black;
-}
-.title-page h1{
-  margin-left: 100px;
+.section-type-games{
+  padding-top: 30vh;
+  display: inline-block;
+  justify-content: center;
   text-align: center;
-  font-size: 25px;
-  font-family: 'Roboto', sans-serif;
-  border-bottom: 3px solid forestgreen;
+  width: 100%;
+  background-color: lightgrey;
 }
 
-.title-text{
-  align-items: center;
-  margin: 0;
-  display: inline;
-  justify-self: center;
+.title-page h1{
+  text-decoration: underline 3px darkblue;
+  
+  font-size: 40px;
   
 }
 
-.title-text p{
+.title-page p{
+  font-size: 1.4rem;
+  padding: 30px 10vw;
+  display:inline-block;
+  justify-content: space-evenly;
   text-align: left;
-  margin: 0;
-  max-width: 500px;
-  text-indent: 4rem;
-  padding: 0px 100px;
-  padding-top: 30px;
-  padding-bottom: 80px;
-  font-size: 20px;
   font-family: 'Roboto', sans-serif;
+}
+
+.img-type-div{
+  text-align: center;
+}
+.img-type{
+  width: auto;
+  height: auto; 
+  max-width: 400px;
+  max-height: 300px;
 }
 
 
@@ -708,6 +719,7 @@ footer p{
 
   body{
     font-family: 'Roboto', sans-serif;
+    background-color: lightgray;
   }
   
 main {
@@ -735,9 +747,9 @@ header {
     height: 14vh; /*height fixo*/
     justify-content: center;
     align-items: center;
-    background-color: lightgreen;
+    background-color: #100f15;
     font-family: 'Roboto', sans-serif;
-
+    color: #d7d7d7;
     font-size: 15px;
 }
 
@@ -749,7 +761,7 @@ nav {
     flex-grow: 1;
     height: 7vh;         /*height fixo*/
     align-items: center;
-    background-color: lightgreen;
+    background-color: #100f15;
   }
   
   nav ul{
@@ -776,7 +788,7 @@ nav {
     flex-direction: column;
     justify-content: center; 
     align-items: center;
-    background-color: lightgreen;   /* cor na li*/
+    background-color: #100f15;   /* cor na li*/
     
   }
 
@@ -800,7 +812,7 @@ nav ul li:hover::after {
 
 nav ul li a{
   text-decoration: none;
-  color: black;
+  color: #d7d7d7;
 }
 
 
@@ -808,16 +820,16 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: lightgreen;
+  background-color: #100f15;
   height: 15vh;
 }
 
 footer p{
-  font-weight:bold;
-  text-shadow: 5px 5px 0.5px lightgray;
-  color: black;
-  font-size: 15px;
-  font-family: 'Changa One';
+  
+  
+  font-family: 'Roboto', sans-serif;
+  color: #d7d7d7;
+  font-size: 20px;
 }
 
 /* estilo mobile home  */
@@ -825,7 +837,7 @@ footer p{
 
 
 .start-main{
- 
+  background-color: lightgray;
   display: inline;
   text-align: justify;
   width: 100%;
@@ -881,7 +893,7 @@ footer p{
 
 .sec-info{
   padding: 50px 0px;
-  /* background-color: gainsboro; */
+  background-color: lightgray;
 }
 
 .sec-info h1{
@@ -970,6 +982,7 @@ footer p{
 }
 
 .sec-register{
+  background-color: lightgray;
   padding: 50px 0px;
   margin-bottom: 50px;
   text-align: center;
@@ -1007,38 +1020,39 @@ footer p{
 
 /* Estilo do titulo das paginas de games*/
 
-.title-page{
-  display: flex;
-  justify-content: flex-start;
+.section-type-games{
+  background-color: lightgray;
   padding-top: 30vh;
-  color: black;
-}
-.title-page h1{
-  margin-left: 10vw;
+  display: inline-block;
+  justify-content: center;
   text-align: center;
-  font-size: 25px;
-  font-family: 'Roboto', sans-serif;
-  border-bottom: 3px solid forestgreen;
+  width: 100%;
 }
 
-.title-text{
-  align-items: center;
-  margin: 0;
-  display: inline;
-  justify-self: center;
+.title-page h1{
+  text-decoration: underline 3px darkblue;
+  
+  font-size: 40px;
   
 }
 
-.title-text p{
+.title-page p{
+  font-size: 1.4rem;
+  padding: 30px 10vw;
+  display:inline-block;
+  justify-content: space-evenly;
   text-align: left;
-  margin: 0;
-  max-width: 500px;
-  text-indent: 3rem;
-  padding: 0px 30px;
-  padding-top: 30px;
-  padding-bottom: 80px;
-  font-size: 20px;
   font-family: 'Roboto', sans-serif;
+}
+
+.img-type-div{
+  text-align: center;
+}
+.img-type{
+  width: auto;
+  height: auto; 
+  max-width: 400px;
+  max-height: 300px;
 }
 
 }

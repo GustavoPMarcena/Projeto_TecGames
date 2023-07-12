@@ -4,6 +4,8 @@
 
 .config {
     transition: 0.5s 0s;
+    cursor: pointer;
+    color:#d7d7d7;
 }
 
 .config-ativado {
