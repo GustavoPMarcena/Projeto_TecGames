@@ -14,7 +14,7 @@
   margin-left: 5px;
   margin-right: 5px;
   font-size: 20px;
-  border-radius: 20px;
+  /* border-radius: 20px; */
 
 }
 
@@ -28,11 +28,11 @@
   height: auto;
   background-color: #1a191e;
   text-align: left;
-  border-radius: 20px;
+  /* border-radius: 20px; */
 }
 
 .card-content {
-  border-radius: 20px;
+  /* border-radius: 20px; */
     display: flex;
   flex-grow: 1;
   flex-direction: column;
