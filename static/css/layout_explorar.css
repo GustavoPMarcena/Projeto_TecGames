@@ -5,6 +5,15 @@
     flex-wrap: wrap;
     background-color: lightcyan;
     justify-content: space-evenly;
+    
+    
+}
+
+.copy-box-explorar-sub {
+    width: 350px;
+    height: auto;
+    margin-bottom: 35px;
+    
 }
 
 .box-explorar-sub {
@@ -24,3 +33,43 @@
         margin-bottom: 10px;
     }
 }
+
+
+
+/*Modal*/
+.modal {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.381);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 10;
+
+    align-items: center;
+    justify-content: center;
+
+}
+.m-desativado {display: none;}
+
+
+.modal-conteudo {
+    
+    display: flex;
+    z-index: 10;
+    width: 50%;
+    height: 50%;
+    background-color: blue;
+    margin: 25vh 25%;
+    opacity: 10;
+}
+
+
+
+.modal-conteudo video {
+    display: flex;
+    flex-grow: 1;
+    opacity: 1;
+}
+
+
+

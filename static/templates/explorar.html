@@ -48,20 +48,28 @@
           </ul>
         </nav>
     </header>
-
+    <div class="modal m-desativado">
+        <div class="modal-conteudo">
+            <video src="" controls></video>
+        </div>
+    </div>
+    
     <main>
+        
         <div>
             <h1>topicos</h1>
+            
             <a href="#videos">Videos</a> <br>
             <a href="#videos-ao-vivo">Videos ao vivo</a> <br>
             <a href="#fotos-do-dia">Fotos do dia</a> <br>
             <a href="#noticias">notícias</a>
         </div>
-
+        
+        
         <div id="videos">
             <h1>videos</h1>
             <section class="box-explorar">
-                <img class="box-explorar-sub" src="../midias/fotos/PES.webp" alt="">
+                <img class="box-explorar-sub" id="foto" src="../midias/fotos/PES.webp" alt="">
                 <img class="box-explorar-sub" src="../midias/fotos/PES.webp" alt="">
                 <img class="box-explorar-sub" src="../midias/fotos/PES.webp" alt="">
 
@@ -125,7 +133,7 @@
                         <div class="sub-caixa">
                             <h1>Atualizações</h1>
                             <p>
-                                Confira abaixo:<br><br><br>
+                                Confira abaixo as proximas atualizações:<br><br><br>
                                 -Need for Speed<br><br>
                                 -Minecraft(Xbox)<br><br>
                                 -Bomberman(PC)
@@ -212,6 +220,9 @@
             </section>
         </div>
     </main>
+    <footer>
+        <p>@TecGames, 2023, direitos reservados.</p>
+    </footer>
     
 
     <script src="../js/caixa_horizontal.js"></script>
@@ -219,5 +230,8 @@
     <script src="../js/son.js"></script>
     <script src="../js/config.js"></script>
     <script src="../js/mobile.js"></script>
+
+    <script src="../js/modal_video.js"></script>
+
 </body>
 </html>
