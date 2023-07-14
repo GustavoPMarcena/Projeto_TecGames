@@ -41,7 +41,7 @@
   padding: 10px;
   margin: 0px 10px;
   background-color: #1a191e;
-  color: white;
+  color: #d7d7d7;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -309,8 +309,10 @@
 
     display: block;
     margin-bottom: 10px;
-    min-height: none;
-    max-height: 100%;
+    
+  
+    max-height: 310px;
+    min-height: 40vh;
     max-width: 100%;
     box-shadow: 3px 3px 3px black;
     transition: 1s 0s;
