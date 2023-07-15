@@ -32,10 +32,20 @@
     padding-left: 80px;
 }
 
+.desenvolvedores {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+
 .section-dev {
     display: flex;
     flex-grow: 1;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     background-color: transparent;
     padding: 10px;
@@ -82,9 +92,16 @@
     justify-content: center;
     width: 100%;
     height: auto;
+    min-height: 480px;
     align-items: center;
     border-bottom: 1px solid black;
     margin-bottom: 15px;
+}
+
+@media (max-width:990px) {
+    .dev-foto {
+        min-height: 100px;
+    }
 }
 
 .dev-foto img {

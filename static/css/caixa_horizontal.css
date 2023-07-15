@@ -1,12 +1,20 @@
+/*nivel 0*/
+
+.center-caixa-horizontal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /*nivel 1*/
 
 
 .caixa-horizontal {
     display: flex;
     flex-direction: column;
-    background-color: darkgray;
+    background-color: gray;
     border-radius: 10px;
-    width: 96%;
+    width: 98%;
 }
 /**/
 
