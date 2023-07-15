@@ -9,7 +9,7 @@ var cond = false
 
 var k = 0
 
-for(k=0;k<18;k++) {
+for(k=0;k<12;k++) {
     fotos[k].addEventListener('click', foto_click)
 }
 
