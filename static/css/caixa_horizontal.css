@@ -5,6 +5,8 @@
     display: flex;
     flex-direction: column;
     background-color: darkgray;
+    border-radius: 10px;
+    width: 96%;
 }
 /**/
 
