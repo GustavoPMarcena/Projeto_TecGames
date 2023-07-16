@@ -6,23 +6,27 @@
     padding: 10px 0px;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    
-    
-}
-
-.copy-box-explorar-sub {
-    width: 350px;
-    height: auto;
-    margin-bottom: 35px;
-    
 }
 
 .box-explorar-sub {
+    cursor: pointer;
     width: 350px;
     height: auto;
     margin-bottom: 35px;
-    
+    box-shadow: #100f15 3px 3px 5px;
 }
+
+.box-explorar-sub:hover{
+    box-shadow: #100f15 0px 0px 0px;
+}
+
+.box-explorar-sub-imagem{
+    box-shadow: #100f15 0px 0px 0px;
+    cursor:auto;
+}
+
+
+
 @media ((min-width: 576px) and (max-width:990px)) {
     .box-explorar-sub {
         margin-bottom: 20px;

@@ -64,6 +64,7 @@
 
 
 .caixa-btn {
+    cursor: pointer;
     background-color: cornflowerblue;
     border: 5px solid white;
     border-radius: 10px;
@@ -105,17 +106,17 @@
 .sub-caixa {
     width: 90%;
     min-height: 90%;
-    background-color:cornflowerblue;
+    background-color:#1a191e;
     padding: 10px;
     overflow: hidden;
 }
 
 .sub-caixa p {
-    color: white;
+    color: #d7d7d7;
 }
 
 .sub-caixa h1 {
-    color: black;
+    color: white;
 }
 
 
